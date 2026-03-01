@@ -4,7 +4,7 @@
 LUMIÈRE is a professional, bespoke reservation system built for high-end hospitality brands. It prioritizes user trust through minimalist design, responsive logic, and asynchronous data handling.
 
 ## 🚀 Live Demo
-**Production URL:** [https://beautiful-manatee-2a7c95.netlify.app/](https://beautiful-manatee-2a7c95.netlify.app/)
+**Production URL:** [https://gorgeous-quokka-ab3fe7.netlify.app/](https://gorgeous-quokka-ab3fe7.netlify.app/)
 
 ---
 
@@ -24,6 +24,9 @@ LUMIÈRE is a professional, bespoke reservation system built for high-end hospit
 1. Clone the repo: `git clone https://github.com/YOUR-USERNAME/lumiere-system.git`
 2. **Security:** Update the `form action` in `index.html` with your unique Formspree Endpoint.
 3. **Theming:** Customize brand colors via the `:root` variables in `style.css`.
+
+### 📊 Performance Verification
+![Lighthouse Score](assets/lumiere_lighthouse_score.png)
 
 ---
 *Developed by Angel Marcus — Front-End Specialist for Premium Brands.*
