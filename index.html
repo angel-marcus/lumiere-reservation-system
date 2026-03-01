@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMIÈRE | Elite Table Reservation & Membership</title>
+    
+    <meta name="description" content="Secure your exclusive dining experience at Lumière International. High-performance, encrypted luxury reservation portal.">
+    
+    <link rel="preload" as="image" href="assets/hero.jpg" fetchpriority="high">
+    
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-container">
+    <img src="assets/hero.jpg" 
+         alt="Lumiere Luxury Interior" 
+         fetchpriority="high" 
+         loading="eager" 
+         style="width: 100%; height: 100%; object-fit: cover;">
+</div>
+    <div class="viewport-lock">
+      <section class="card reveal" role="main">
+        <header>
+          <h1>LUMIÈRE</h1>
+          <p class="subtitle">MEMBER EXCLUSIVE ACCESS</p>
+          <div class="system-status" aria-live="polite">
+            <span class="dot"></span>
+            <span class="status-text">ENCRYPTED CONNECTION ACTIVE</span>
+          </div>
+        </header>
+
+        <form
+          id="booking-form"
+          action="https://formspree.io/f/your-id-here"
+          method="POST"
+          novalidate
+        >
+          <div class="section-label">01. Identity</div>
+          <div class="input-row">
+            <div class="group">
+              <label for="guest-name">Guest Name</label>
+              <input
+                id="guest-name"
+                name="name"
+                type="text"
+                placeholder="e.g. Alexander Knight"
+                required
+                aria-required="true"
+                autocomplete="name"
+              />
+              <span class="error-msg" aria-live="assertive"
+                >Identity verification required</span
+              >
+            </div>
+            <div class="group">
+              <label for="phone">Phone</label>
+              <input
+                id="phone"
+                name="phone"
+                type="tel"
+                placeholder="+1 (000) 000-0000"
+                autocomplete="tel"
+              />
+            </div>
+          </div>
+
+          <div class="group">
+            <label for="email">Email Address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Verification Required"
+              required
+              aria-required="true"
+              autocomplete="email"
+            />
+            <span class="error-msg" aria-live="assertive"
+              >Valid email required for archive</span
+            >
+          </div>
+
+          <div class="section-label">02. The Curation</div>
+          <div class="input-row">
+            <div class="group">
+              <label for="res-date">Date</label>
+              <input
+                id="res-date"
+                name="date"
+                type="date"
+                required
+                aria-required="true"
+              />
+              <span class="error-msg" aria-live="assertive"
+                >Select a future date</span
+              >
+            </div>
+            <div class="group">
+              <label for="time-slot">Time Slot</label>
+              <select id="time-slot" name="time" required aria-required="true">
+                <option value="" disabled selected>Select Time</option>
+                <option>18:30 — Sunset Lounge</option>
+                <option>20:30 — Main Hall</option>
+                <option>22:30 — Private Vault</option>
+              </select>
+              <span class="error-msg" aria-live="assertive"
+                >Selection required</span
+              >
+            </div>
+          </div>
+
+          <div class="group">
+            <label id="seating-label">Seating Preference</label>
+            <div
+              class="pill-selector"
+              role="radiogroup"
+              aria-labelledby="seating-label"
+            >
+              <label class="pill"
+                ><input type="radio" name="seat" value="window" /><span
+                  >Window</span
+                ></label
+              >
+              <label class="pill"
+                ><input type="radio" name="seat" value="terrace" /><span
+                  >Terrace</span
+                ></label
+              >
+              <label class="pill"
+                ><input type="radio" name="seat" value="booth" checked /><span
+                  >Booth</span
+                ></label
+              >
+            </div>
+          </div>
+
+          <div class="section-label">03. Requirements</div>
+          <div class="group">
+            <label for="requests">Special Requests / Allergies</label>
+            <textarea
+              id="requests"
+              name="message"
+              rows="2"
+              placeholder="Describe any specific needs..."
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn" id="submit-btn">
+            <span class="btn-text">SECURE RESERVATION</span>
+            <div class="loader hidden"></div>
+          </button>
+        </form>
+
+        <div id="status-container" class="hidden-msg" aria-live="assertive">
+          <p id="status-text"></p>
+        </div>
+
+        <footer>
+          <nav class="footer-links">
+            <a href="#privacy" rel="noopener">PRIVACY</a>
+            <a href="#terms" rel="noopener">TERMS</a>
+            <a href="mailto:support@lumiere.com">SUPPORT</a>
+          </nav>
+          <p>© 2026 LUMIÈRE INTERNATIONAL. ALL RIGHTS RESERVED.</p>
+        </footer>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
