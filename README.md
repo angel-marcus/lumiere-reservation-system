@@ -4,7 +4,7 @@
 LUMIÈRE is a professional, bespoke reservation system built for high-end hospitality brands. It prioritizes user trust through minimalist design, responsive logic, and asynchronous data handling.
 
 ## 🚀 Live Demo
-**Production URL:** [https://gorgeous-quokka-ab3fe7.netlify.app/](https://gorgeous-quokka-ab3fe7.netlify.app/)
+**Production URL:** [https://lumiere-deployment-v1.vercel.app/](https://lumiere-deployment-v1.vercel.app/)
 
 ---
 
