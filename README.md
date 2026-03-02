@@ -29,4 +29,5 @@ LUMIÈRE is a professional, bespoke reservation system built for high-end hospit
 ![Lighthouse Score](assets/lumiere_lighthouse_score.png)
 
 ---
+
 *Developed by Angel Marcus — Front-End Specialist for Premium Brands.*
