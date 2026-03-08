@@ -13,16 +13,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
 </head>
 <body>
     <div class="background-container">
-    <img src="assets/hero.jpg" 
-         alt="" 
-         fetchpriority="high" 
-         width="1200" 
-         height="800"
-         style="width: 100%; height: 100%; object-fit: cover;">
+    <img src="assets/hero.webp" 
+     alt="" 
+     fetchpriority="high" 
+     decoding="async"
+     width="1200" 
+     height="800"
+     style="width: 100%; height: 100%; object-fit: cover; aspect-ratio: 1200/800;">
     </div>
     <div class="viewport-lock">
       <section class="card reveal" role="main">
